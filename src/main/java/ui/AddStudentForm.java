@@ -18,22 +18,23 @@ public class AddStudentForm extends JFrame {
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
-//        JPanel panel=new JPanel(new GridLayout(8,5,5,30));
+        JPanel panel=new JPanel();
 //        panel.setBackground(Color.ORANGE);
+        panel.setLayout(null);
 
-        BackGroundPanel panel = new BackGroundPanel("/images/pic.png");
-        setContentPane(panel);   // background panel
+//        BackGroundPanel panel = new BackGroundPanel("/images/pic.png");
+//        setContentPane(panel);   // background panel
         JLabel welcome=new JLabel("Enter the details to add the student");
 
         welcome.setFont(new Font("Arial",Font.BOLD,25));
-        welcome.setForeground(Color.WHITE);
+        welcome.setForeground(Color.BLACK);
         welcome.setBounds(150,10,500,150);
         panel.add(welcome);
 
         JLabel student = new JLabel("Student Name:");
         student.setFont(new Font("Arial",Font.PLAIN,18));
         student.setBounds(120,120,150,30);
-        student.setForeground(Color.WHITE);
+        student.setForeground(Color.BLACK);
         panel.add(student);
 
         nameField = new JTextField();
@@ -43,7 +44,7 @@ public class AddStudentForm extends JFrame {
         JLabel rollno = new JLabel("Roll No:");
         rollno.setFont(new Font("Arial",Font.PLAIN,18));
         rollno.setBounds(120,180,150,30);
-        rollno.setForeground(Color.WHITE);
+        rollno.setForeground(Color.BLACK);
         panel.add(rollno);
 
         rollField = new JTextField();
@@ -55,7 +56,7 @@ public class AddStudentForm extends JFrame {
         //save.setForeground(Color.WHITE);
         panel.add(save);
 
-        //add(panel);
+       add(panel);
 
         save.addActionListener(e -> saveStudent());
 

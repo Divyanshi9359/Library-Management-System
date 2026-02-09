@@ -12,10 +12,10 @@ public class ReturnBookForm extends JFrame {
     public ReturnBookForm() {
 
         setTitle("Return Book");
-        setSize(400,250);
+        setSize(450,250);
         setLocationRelativeTo(null);
 
-        JPanel panel = new JPanel(new GridLayout(3,2,10,10));
+        JPanel panel = new JPanel(new GridLayout(3,2,5,50));
 
         panel.add(new JLabel("Student Name"));
         studentField = new JTextField();

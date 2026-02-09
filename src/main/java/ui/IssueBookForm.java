@@ -17,13 +17,19 @@ public class IssueBookForm extends JFrame {
         setSize(400,250);
         setLocationRelativeTo(null);
 
-        JPanel panel = new JPanel(new GridLayout(3,2,10,10));
+        JPanel panel = new JPanel(new GridLayout(4,2,10,10));
 
-        panel.add(new JLabel("Student Name"));
+        //panel.add(new JLabel("Student Name"));
+        JLabel stud=new JLabel("Student Name:");
+        stud.setFont(new Font("Arial", Font.PLAIN,15));
+        panel.add(stud);
         studentField = new JTextField();
         panel.add(studentField);
 
-        panel.add(new JLabel("Book Name"));
+        //panel.add(new JLabel("Book Name"));
+        JLabel book=new JLabel("Book Name:");
+        book.setFont(new Font("Arial",Font.PLAIN,15));
+        panel.add(book);
         bookField = new JTextField();
         panel.add(bookField);
 

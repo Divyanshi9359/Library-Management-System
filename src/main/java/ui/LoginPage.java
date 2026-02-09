@@ -17,7 +17,7 @@ public class LoginPage extends JFrame
     {
         setTitle("Library System Management-Login");
         setSize(500,350);
-        getContentPane().setBackground(Color.ORANGE);
+        //getContentPane().setBackground(Color.ORANGE);
         setLayout(new FlowLayout());
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -30,14 +30,14 @@ public class LoginPage extends JFrame
     private void initComponents()
     {
         JPanel panel=new JPanel(new BorderLayout(10,10));
-        panel.setBackground(Color.ORANGE);
+       // panel.setBackground(Color.ORANGE);
 
         JLabel heading =new JLabel("Login Page",SwingConstants.CENTER);
         heading.setFont(new Font("Arial",Font.BOLD,22));
         panel.add(heading,BorderLayout.NORTH);
 
         JPanel centralPanel=new JPanel(new GridLayout(8,0,300,15));
-        centralPanel.setBackground(Color.ORANGE);
+       // centralPanel.setBackground(Color.ORANGE);
 
 
         JLabel username=new JLabel("Username");
